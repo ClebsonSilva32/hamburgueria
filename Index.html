@@ -1,0 +1,141 @@
+<!DOCTYPE html> <!-- Define que o documento segue o padrão HTML5 -->
+<html lang="pt-br"> <!-- Inicia o documento HTML e define o idioma como português do Brasil -->
+<head>
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 (suporta acentos) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Faz o site ser responsivo -->
+  <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo CSS externo para estilizar a página -->
+  <title>Hamburgueria Mais Sabor</title> <!-- Define o título que aparece na aba do navegador -->
+</head>
+
+<body> <!-- Início do corpo da página -->
+<header class="container">
+  <nav class="navegacao">
+    
+    <!-- Nome da Hamburgueria -->
+    <div class="logo">
+      <h1>Hamburgueria Mais Sabor</h1>
+    </div>
+
+    <!-- Botão hamburguer -->
+    <span class="menu-toggle">&#9776;</span>
+
+    <!-- Menu central -->
+    <ul class="menu">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#cardapio">Cardápio</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+
+
+
+  <!-- ==========================
+       Conteúdo Principal
+  =========================== -->
+  <main> <!-- Main indica o conteúdo principal da página -->
+
+ <!-- ===== Seção Início ===== -->
+<section id="inicio" class="inicio">
+  <div class="inicio-conteudo">
+    <!-- Texto -->
+    <div class="texto-inicio">
+      <h1>Uma Combinação <br>Perfeita</h1>
+      <button class="btn-peca-agora" id="btnPecaAgora">Peça Agora</button>
+    </div>
+
+    <!-- Imagem -->
+    <div class="imagem-inicio">
+      <img src="./img/hamburguer.png" alt="logo-hamburgueria" class="logo-principal">
+    </div>
+  </div>
+</section>
+
+<!-- Seção Cardápio-->
+   <section id="cardapio" class="cardapio">
+  <h2>Nosso Cardápio</h2>
+  
+  <div class="cards-cardapio">
+    <div class="card">
+      <img src="./img/Cheeseburger.jpg" alt="Cheeseburger">
+      <h3>Cheeseburger</h3>
+      <p>Carne suculenta, queijo cheddar, alface e tomate.</p>
+      <span>R$ 25,00</span>
+      <button>Peça Agora</button>
+    </div>
+
+    <div class="card">
+      <img src="./img/Bacon burguer.jpg" alt="Bacon Burger">
+      <h3>Bacon Burger</h3>
+      <p>Carne, bacon crocante, queijo e molho especial.</p>
+      <span>R$ 28,00</span>
+      <button>Peça Agora</button>
+    </div>
+
+    <div class="card">
+      <img src="./img/Bacon burguer.jpg" alt="Bacon Burger">
+      <h3>Bacon Burger</h3>
+      <p>Carne, bacon crocante, queijo e molho especial.</p>
+      <span>R$ 28,00</span>
+      <button>Peça Agora</button>
+    </div>
+
+    <div class="card">
+      <img src="./img/Bacon burguer.jpg" alt="Bacon Burger">
+      <h3>Bacon Burger</h3>
+      <p>Carne, bacon crocante, queijo e molho especial.</p>
+      <span>R$ 28,00</span>
+      <button>Peça Agora</button>
+    </div>
+
+    <div class="card">
+      <img src="./img/Bacon burguer.jpg" alt="Bacon Burger">
+      <h3>Bacon Burger</h3>
+      <p>Carne, bacon crocante, queijo e molho especial.</p>
+      <span>R$ 28,00</span>
+      <button>Peça Agora</button>
+    </div>
+
+    <div class="card">
+      <img src="./img/Bacon burguer.jpg" alt="Bacon Burger">
+      <h3>Bacon Burger</h3>
+      <p>Carne, bacon crocante, queijo e molho especial.</p>
+      <span>R$ 28,00</span>
+      <button>Peça Agora</button>
+    </div>
+  </div>
+  </section>
+
+<section id="contato">
+  <div class="contato-container">
+    <div class="contato-texto">
+      <h2>VAMOS CONVERSAR?</h2>
+      <p>
+        Quer sair na frente nos negócios?<br>
+        Entre em contato comigo e saiba como ter um projeto que vai revolucionar seu trabalho.
+      </p>
+    </div>
+
+    <form id="formContato" action="enviar.html" method="post" autocomplete="off">
+      <input type="text" id="nome" name="nome" placeholder="Nome" required>
+      <input type="email" id="email" name="email" placeholder="E-mail" required>
+      <textarea id="mensagem" name="mensagem" placeholder="Mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+
+
+
+  </main> <!-- Fim do conteúdo principal -->
+
+  <footer>
+  <p class="copy">&copy; 2025 Hamburgueria Mais Sabor - Todos os direitos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body> <!-- Fim do corpo -->
+</html> <!-- Fim do documento -->
